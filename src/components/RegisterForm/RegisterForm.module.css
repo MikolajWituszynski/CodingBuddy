@@ -1,0 +1,20 @@
+.labelLogin {
+    margin: 2px;
+    }
+    
+    .form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-content: center
+    
+    }
+    input {
+        margin: 5px;
+        width: 200px;
+    }
+
+    .button {
+        width: 100px;
+       align-self: center;
+    }

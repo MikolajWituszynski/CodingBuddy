@@ -1,8 +1,9 @@
 import React from "react";
+import RegisterForm from "../RegisterForm/RegisterForm";
 const RegisterPage = () => {
     return ( 
         <>
-        <div>Hello to RegisterPage</div>
+        <RegisterForm/>
         </>
     )
 };
