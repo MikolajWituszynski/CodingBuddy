@@ -4,13 +4,14 @@ import { useForm } from "react-hook-form";
 import { auth } from "../../helpers/firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { LoginFormData } from "../../helpers/interfaces";
+import { useNavigate } from "react-router-dom";
 const LoginForm = () => {
     const { register, handleSubmit } = useForm<LoginFormData>();
 
     const submitHandler = ({email, password}: LoginFormData) => {
         signInWithEmailAndPassword(auth, email, password)
-        .then(()=> console.log("Success"))
-        .catch((err) => console.error(err.messsage));
+        .then(()=> console.log("Logged in succesfully"))
+        .catch((err) => alert(err.message));
     }
     return ( 
         <>

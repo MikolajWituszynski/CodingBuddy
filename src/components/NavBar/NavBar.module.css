@@ -27,3 +27,7 @@
 .titleHomePage {
     margin: 5px;
 }
+
+.titleHomePage:hover {
+    cursor: pointer;
+}
