@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './LoginForm.module.css'
+import styles from '../../index.module.css'
 import { useForm } from "react-hook-form";
 import { auth } from "../../helpers/firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -22,7 +22,7 @@ const LoginForm = () => {
         <label>Password
         <input {...register("password",{required: true})} type="password" id="login-password"/>
         </label>
-        <button type="submit" className={styles.button}>login</button>
+        <button type="submit" >login</button>
        </form>
         </>
     )
