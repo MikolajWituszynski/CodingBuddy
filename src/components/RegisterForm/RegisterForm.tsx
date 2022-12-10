@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './RegisterForm.module.css'
+import styles from '../../index.module.css'
 import { useForm } from "react-hook-form";
 import { auth } from "../../helpers/firebaseConfig";
 import { RegisterFormData } from "../../helpers/interfaces";
