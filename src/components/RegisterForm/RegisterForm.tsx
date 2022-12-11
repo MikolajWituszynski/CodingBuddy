@@ -32,6 +32,7 @@ const RegisterForm = () => {
         </label>
         <button className={styles.button}>register</button>
        </form>
+       
         </>
     )
 };

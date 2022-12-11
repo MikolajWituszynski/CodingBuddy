@@ -31,3 +31,7 @@
 .titleHomePage:hover {
     cursor: pointer;
 }
+
+.buttonsRight {
+    margin: 6px;
+}

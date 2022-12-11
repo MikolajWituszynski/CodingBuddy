@@ -5,18 +5,21 @@ import { auth } from "../../helpers/firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { LoginFormData } from "../../helpers/interfaces";
 import { useNavigate } from "react-router-dom";
-const LoginForm = () => {
-    const { register, handleSubmit } = useForm<LoginFormData>();
 
+const LoginForm = () => {
+
+    const { register, handleSubmit } = useForm<LoginFormData>();
+    const navigate = useNavigate();
     const submitHandler = ({email, password}: LoginFormData) => {
         signInWithEmailAndPassword(auth, email, password)
         .then(()=> console.log("Logged in succesfully"))
         .catch((err) => alert(err.message));
     }
     return ( 
-        <>
+       <>
+       <div>
        <h1>Login</h1>
-       <form onSubmit ={(handleSubmit(submitHandler))}className={styles.form}>
+       <form onSubmit ={handleSubmit(submitHandler)}className={styles.form}>
         <label className={styles.labelLogin}>Username
         <input {...register("email",{required: true})} type="text" id="login-username"/>
         </label>
@@ -25,6 +28,7 @@ const LoginForm = () => {
         </label>
         <button type="submit" className={styles.button}>login</button>
        </form>
+       </div>
         </>
     )
 };

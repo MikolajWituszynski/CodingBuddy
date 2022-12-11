@@ -11,8 +11,10 @@ margin: 2px;
 }
 input {
     margin: 5px;
+    width: 200px
 }
 .button {
     width: 100px;
    align-self: center;
+   width: 200px
 }
