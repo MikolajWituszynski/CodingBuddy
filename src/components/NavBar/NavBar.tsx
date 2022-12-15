@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import styles from '../../index.module.css'
+import styles from './NavBar.module.css'
 const NavBar: React.FC<{}> = () => {
     const navigate = useNavigate();
     const handleClickToAccountPage = () => navigate('/account')

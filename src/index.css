@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply 
+    m-0
+    font-sans
+    antialiased
+    bg-[#f5fdff];
+  }
+  code {
+    @apply
+    font-mono;
+  }
+  h1 {
+    @apply 
+    text-center
+    text-2xl
+  font-bold;
+  }
+  p {
+    @apply flex
+    justify-self-start
+    mx-[5px];
+  }
+  button, [type="button"], [type="reset"], [type="submit"] {
+    @apply bg-white
+  border-black
+  border-2
+  rounded
+  w-28
+  self-center
+  font-semibold;
+  }
+  input {
+    @apply 
+    m-[5px]
+    w-[200px]
+    border-2
+  border-black
+  rounded
+  outline-none;
+  }
+}

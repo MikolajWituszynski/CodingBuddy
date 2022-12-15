@@ -1,0 +1,12 @@
+.form {
+  @apply flex
+    justify-between
+    flex-col
+    content-center
+    flex-wrap;
+}
+
+.label {
+  @apply m-0.5
+  text-right;
+}

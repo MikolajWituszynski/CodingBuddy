@@ -1,0 +1,33 @@
+.container {
+    @apply flex
+    justify-start
+    h-[200px]
+    mt-3;
+  }
+
+.subcontainer {
+    @apply flex
+    flex-wrap
+    justify-around
+    h-[200px]
+    w-full;
+}   
+
+.picture-frame {
+    @apply flex
+    justify-center
+    ml-[5px]
+    h-full
+    w-1/5
+    border-black
+    border-2
+    rounded;
+}
+
+.description {
+    @apply w-full;
+}
+
+.i-know, .status {
+    @apply self-end;
+}

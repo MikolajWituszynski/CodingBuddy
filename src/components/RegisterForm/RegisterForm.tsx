@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../../index.module.css'
+import styles from '../LoginForm/LoginForm.module.css'
 import { useForm } from "react-hook-form";
 import { auth } from "../../helpers/firebaseConfig";
 import { RegisterFormData } from "../../helpers/interfaces";
@@ -27,13 +27,13 @@ const RegisterForm = () => {
         <>
        <h1>Register</h1>
        <form onSubmit={handleSubmit(submitHandler)} className={styles.form}>
-        <label className={styles.labelRegister}>Username
+        <label className={styles.label}>Username
         <input {...register("email",{required: true})}  type="text" id="login-username"/>
         </label>
-        <label>Password
+        <label className={styles.label}>Password
         <input {...register("password",{required: true})} type="password" id="login-password"/>
         </label>
-        <label>Password
+        <label className={styles.label}>Password
         <input {...register("password2",{required: true})} type="password" id="login-password"/>
         </label>
         <button className={styles.button}>register</button>

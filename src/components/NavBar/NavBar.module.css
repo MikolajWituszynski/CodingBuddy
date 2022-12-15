@@ -1,0 +1,26 @@
+.navbar {
+    @apply w-full
+    h-12
+    bg-brown-300
+    border-black
+    flex
+    justify-between;
+  }
+  
+  .navbar button {
+    @apply bg-brown-50;
+  }
+  
+  .loginRegisterButton {
+    @apply m-1
+    h-10
+    hover:bg-[#a8e5f7]
+    hover:text-brown-900
+    hover:cursor-pointer
+    duration-[440ms]
+  }
+
+  .titleHomePage {
+    @apply
+    m-[5px]
+  }
